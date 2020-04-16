@@ -1,7 +1,7 @@
 {
-	"name": "Turnip Prophet - ACNH Turnip Tracker",
-	"short_name": "Turnip Prophet",
-	"description": "An app to track your Animal Crossing: New Horizons turnip prices daily!",
+	"name": "动物森友会 - 大头菜价格预测",
+	"short_name": "大头菜价格预测",
+	"description": "适用于 Nintendo Switch 版《集合啦！动物森友会》的大头菜价格预测工具。",
 	"start_url": "index.html",
 	"display": "standalone",
 	"background_color": "#def2d9",
