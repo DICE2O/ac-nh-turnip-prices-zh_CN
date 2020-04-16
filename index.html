@@ -328,7 +328,7 @@
       } else {
         // Register the service worker
         navigator.serviceWorker
-          .register("https://cdn.jsdelivr.net/gh/DICE2O/ac-nh-turnip-prices-zh_CN@master/service-worker.js", {
+          .register("/service-worker.js", {
             scope: "./",
           })
           .then(function (reg) {
