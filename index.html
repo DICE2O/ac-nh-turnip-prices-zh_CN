@@ -11,8 +11,20 @@
   <meta name="author" content="DICE2O">
   <meta name="theme-color" content="#def2d9">
 
+  <!-- generics -->
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/DICE2O/ac-nh-turnip-prices-zh_CN@master/img/favicon-32.png" sizes="32x32">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/DICE2O/ac-nh-turnip-prices-zh_CN@master/img/favicon-128.png" sizes="128x128">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/DICE2O/ac-nh-turnip-prices-zh_CN@master/img/favicon-192.png" sizes="192x192">
+
+  <!-- Android -->
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/DICE2O/ac-nh-turnip-prices-zh_CN@master/img/favicon-196.png" sizes="196x196">
+
+  <!-- iOS -->
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/DICE2O/ac-nh-turnip-prices-zh_CN@master/img/favicon-152.png" sizes="152x152">
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/DICE2O/ac-nh-turnip-prices-zh_CN@master/img/favicon-167.png" sizes="167x167">
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/DICE2O/ac-nh-turnip-prices-zh_CN@master/img/favicon-180.png" sizes="180x180">
+  
   <link rel="manifest" href="/manifest.json">
-  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/DICE2O/ac-nh-turnip-prices-zh_CN@master/img/192.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/DICE2O/ac-nh-turnip-prices-zh_CN@master/css/styles.css">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -177,7 +189,14 @@
             </div>
           </div>
         </div>
-        <button type="button" id="reset" class="reset-button" name="action">
+        <input id="permalink-input" type="text" />
+        <div id="permalink-btn" class="button permalink">
+          <span>Copy permalink</span>
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="copy" class="svg-inline--fa fa-copy fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="currentColor" d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"></path>
+          </svg>
+        </div>
+        <button type="button" id="reset" class="button button--reset" name="action">
           重置价格数据
         </button>
       </form>
@@ -290,6 +309,8 @@
     </p>
     <p>界面汉化：<a href="https://github.com/DICE2O/ac-nh-turnip-prices-zh_CN">DICE2O</a></p>
   </div>
+
+  <div id="snackbar">Some text some message...</div>
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
