@@ -605,7 +605,7 @@ function analyze_possibilities(sell_prices, first_buy, previous_pattern) {
   }
 
   generated_possibilities.unshift({
-    pattern_description: "所有走势",
+    pattern_description: "综合走势",
     pattern_number: 4,
     prices: global_min_max,
     weekGuaranteedMinimum: Math.min(...generated_possibilities.map(poss => poss.weekGuaranteedMinimum)),
