@@ -294,7 +294,7 @@ const generatePermalink = function (buy_price, sell_prices, first_buy, previous_
     searchParams.append('pattern', previous_pattern);
   }
 
-  return searchParams.toString() && window.location.origin.concat('?', searchParams.toString());
+  return searchParams.toString() && window.location.origin.concat('/?', searchParams.toString());
 }
 
 const copyPermalink = function () {
