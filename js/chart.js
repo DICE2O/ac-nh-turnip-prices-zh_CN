@@ -1,6 +1,6 @@
 let chart_instance = null;
 
-Chart.defaults.global.defaultFontFamily = "'Varela Round', sans-serif";
+Chart.defaults.global.defaultFontFamily = "'Varela Round', '-apple-system', BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei',  'Segoe UI Emoji', 'Segoe UI Symbol', Helvetica, Arial, sans-serif";
 
 const chart_options = {
   elements: {
