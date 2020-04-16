@@ -40,7 +40,6 @@ const sell_inputs = getSellFields()
 const buy_input = $("#buy")
 const first_buy_radios = getFirstBuyRadios()
 const previous_pattern_radios = getPreviousPatternRadios()
-const permalink_input = $('#permalink-input')
 const permalink_button = $('#permalink-btn')
 const snackbar = $('#snackbar')
 
@@ -299,15 +298,6 @@ const generatePermalink = function (buy_price, sell_prices, first_buy, previous_
 }
 
 const copyPermalink = function () {
-  let text = permalink_input[0];
-
-  permalink_input.show();
-  text.select();
-  text.setSelectionRange(0, 99999); /* for mobile devices */
-
-  document.execCommand('copy');
-  permalink_input.hide();
-
   flashMessage("链接已复制！");
 }
 
@@ -336,7 +326,7 @@ const update = function () {
   } else {
     permalink_button.hide();
   }
-  permalink_input.val(permalink);
+  permalink_button.attr('data-clipboard-text',permalink);
 
   const prices = [buy_price, buy_price, ...sell_prices];
 
