@@ -2,10 +2,10 @@
 const CACHE = "pwa-precache";
 const precacheFiles = [
 	"/index.html",
-	"/js/predictions.js",
-	"/js/scripts.js",
-	"/css/styles.css",
-	"https://code.jquery.com/jquery-3.4.1.min.js",
+	"https://cdn.jsdelivr.net/gh/DICE2O/ac-nh-turnip-prices-zh_CN@master/js/predictions.js",
+	"https://cdn.jsdelivr.net/gh/DICE2O/ac-nh-turnip-prices-zh_CN@master/js/scripts.js",
+	"https://cdn.jsdelivr.net/gh/DICE2O/ac-nh-turnip-prices-zh_CN@master/css/styles.css",
+	"https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js",
 ];
 
 self.addEventListener("install", function (event) {
