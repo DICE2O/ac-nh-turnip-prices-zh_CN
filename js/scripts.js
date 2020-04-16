@@ -253,7 +253,7 @@ const calculateOutput = function (data, first_buy, previous_pattern) {
     out_line += `<td>${Number.isFinite(poss.probability) ? ((poss.probability * 100).toPrecision(3) + '%') : '—'}</td>`;
     for (let day of poss.prices.slice(1)) {
       if (day.min !== day.max) {
-        out_line += `<td>${day.min}~${day.max}</td>`;
+        out_line += `<td>${day.min} ~ ${day.max}</td>`;
       } else {
         out_line += `<td>${day.min}</td>`;
       }
