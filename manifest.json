@@ -8,11 +8,11 @@
 	"theme_color": "#def2d9",
 	"icons": [
 		{
-			"src": "/img/192.png",
+			"src": "https://cdn.jsdelivr.net/gh/DICE2O/ac-nh-turnip-prices-zh_CN@master/img/192.png",
 			"sizes": "192x192"
 		},
 		{
-			"src": "/img/512.png",
+			"src": "https://cdn.jsdelivr.net/gh/DICE2O/ac-nh-turnip-prices-zh_CN@master/img/512.png",
 			"sizes": "512x512"
 		}
 	]
