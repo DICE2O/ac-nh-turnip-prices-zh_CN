@@ -560,7 +560,7 @@ function*
   }
 
   yield {
-    pattern_description: i18next.t("patterns.fluctuating"),
+    pattern_description: '波动型',
     pattern_number: 0,
     prices: predicted_prices,
     probability,
@@ -639,7 +639,7 @@ function* generate_pattern_1_with_peak(given_prices, peak_start) {
     }
   }
   yield {
-    pattern_description: i18next.t("patterns.large-spike"),
+    pattern_description: '三期型',
     pattern_number: 1,
     prices: predicted_prices,
     probability,
@@ -686,7 +686,7 @@ function* generate_pattern_2(given_prices) {
   }
 
   yield {
-    pattern_description: i18next.t("patterns.decreasing"),
+    pattern_description: '持续下降型',
     pattern_number: 2,
     prices: predicted_prices,
     probability,
@@ -767,7 +767,7 @@ function* generate_pattern_3_with_peak(given_prices, peak_start) {
   }
 
   yield {
-    pattern_description: i18next.t("patterns.small-spike"),
+    pattern_description: '四期型',
     pattern_number: 3,
     prices: predicted_prices,
     probability,
@@ -874,7 +874,7 @@ function analyze_possibilities(sell_prices, first_buy, previous_pattern) {
   }
 
   generated_possibilities.unshift({
-    pattern_description: i18next.t("patterns.all"),
+    pattern_description: '综合走势',
     pattern_number: 4,
     prices: global_min_max,
     weekGuaranteedMinimum: Math.min(...generated_possibilities.map(poss => poss.weekGuaranteedMinimum)),
