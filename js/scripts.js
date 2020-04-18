@@ -42,6 +42,7 @@ const first_buy_radios = getFirstBuyRadios()
 const previous_pattern_radios = getPreviousPatternRadios()
 const permalink_button = $('#permalink-btn')
 const snackbar = $('#snackbar')
+const predictionWorker = new Worker("js/predictions.js")
 
 //Functions
 const fillFields = function (prices, first_buy, previous_pattern) {
@@ -249,13 +250,25 @@ const getSellPrices = function () {
   })
 }
 
+const calculateWorker = function (data, first_buy, previous_pattern) {
+  if (window.Worker) {
+    predictionWorker.postMessage([data, first_buy, previous_pattern]);
+    predictionWorker.onmessage = function(e) {
+      calculateOutput(data, e.data);
+    }
+  } else {
+    console.log('Your browser doesn\'t support web workers.');
+    calculateOutput(data, analyze_possibilities(data, first_buy, previous_pattern));
+  }
+}
+
 const calculateOutput = function (data, first_buy, previous_pattern) {
   if (isEmpty(data)) {
     $("#output").html("");
     return;
   }
   let output_possibilities = "";
-  let analyzed_possibilities = analyze_possibilities(data, first_buy, previous_pattern);
+
   for (let poss of analyzed_possibilities) {
     var out_line = "<tr><td class='table-pattern'>" + poss.pattern_description + "</td>"
     out_line += `<td>${Number.isFinite(poss.probability) ? ((poss.probability * 100).toPrecision(3) + '%') : '—'}</td>`;
@@ -336,7 +349,7 @@ const update = function () {
     updateLocalStorage(prices, first_buy, previous_pattern);
   }
 
-  calculateOutput(prices, first_buy, previous_pattern);
+  calculateWorker(prices, first_buy, previous_pattern);
 }
 
 $(document).ready(initialize);

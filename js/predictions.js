@@ -882,3 +882,8 @@ function analyze_possibilities(sell_prices, first_buy, previous_pattern) {
 
   return generated_possibilities;
 }
+
+onmessage = function(e) {
+  let workerResult = analyze_possibilities(e.data[0], e.data[1], e.data[2]);
+  postMessage(workerResult);
+}

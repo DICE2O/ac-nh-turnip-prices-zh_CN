@@ -24,8 +24,8 @@
   <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/DICE2O/ac-nh-turnip-prices-zh_CN@master/img/favicon-167.png" sizes="167x167">
   <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/DICE2O/ac-nh-turnip-prices-zh_CN@master/img/favicon-180.png" sizes="180x180">
   
-  <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/styles.css">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86539805-7"></script>
@@ -315,8 +315,8 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/DICE2O/ac-nh-turnip-prices-zh_CN@master/js/chart.js"></script>
-  <script src="/js/predictions.js"></script>
-  <script src="/js/scripts.js"></script>
+  <script src="js/predictions.js"></script>
+  <script src="js/scripts.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/DICE2O/ac-nh-turnip-prices-zh_CN@master/js/contributors.js"></script>
   <script>
     var clipboard = new ClipboardJS('#permalink-btn');
@@ -329,7 +329,7 @@
       } else {
         // Register the service worker
         navigator.serviceWorker
-          .register("/service-worker.js", {
+          .register("service-worker.js", {
             scope: "./",
           })
           .then(function (reg) {
