@@ -262,7 +262,7 @@ const calculateWorker = function (data, first_buy, previous_pattern) {
   }
 }
 
-const calculateOutput = function (data, first_buy, previous_pattern) {
+const calculateOutput = function (data, analyzed_possibilities) {
   if (isEmpty(data)) {
     $("#output").html("");
     return;
