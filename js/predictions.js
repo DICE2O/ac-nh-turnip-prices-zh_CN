@@ -826,7 +826,6 @@ class Predictor {
     const first_buy = this.first_buy;
     const previous_pattern = this.previous_pattern;
     const generated_possibilities = Array.from(this.generate_possibilities(sell_prices, first_buy, previous_pattern));
-    console.log(generated_possibilities);
 
     const total_probability = generated_possibilities.reduce((acc, it) => acc + it.probability, 0);
     for (const it of generated_possibilities) {
