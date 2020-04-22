@@ -448,7 +448,7 @@ input[type=number] {
 .permalink {
   display: none;
   white-space: nowrap;
-  font-size: 18px;
+  font-size: 1.2rem;
   user-select: none;
   cursor: pointer;
 }
