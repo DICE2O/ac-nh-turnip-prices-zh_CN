@@ -76,6 +76,10 @@ h2 {
   font-size: 1.6rem;
 }
 
+h6 {
+  font-weight: 400;
+}
+
 .nook-phone {
   width: 100%;
   max-width: 1400px;
