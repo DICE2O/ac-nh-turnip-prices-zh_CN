@@ -1,6 +1,6 @@
 let chart_instance = null;
 
-Chart.defaults.global.defaultFontFamily = "'Varela Round', '-apple-system', BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei',  'Segoe UI Emoji', 'Segoe UI Symbol', Helvetica, Arial, sans-serif";
+Chart.defaults.global.defaultFontFamily = "ParkExt, nintendoP_Seurat-B, DFP_GB_Y9_0, nintendo_udsg-r_org_zh-cn, nintendo_udsg-r_ext_zh-cn, '-apple-system', BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei',  'Segoe UI Emoji', 'Segoe UI Symbol', Helvetica, Arial, sans-serif";
 
 const chart_options = {
   elements: {

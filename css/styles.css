@@ -58,7 +58,7 @@ body {
   align-items: center;
   justify-content: center;
   font-family: ParkExt, nintendoP_Seurat-B, DFP_GB_Y9_0, nintendo_udsg-r_org_zh-cn, nintendo_udsg-r_ext_zh-cn, '-apple-system', BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei',  'Segoe UI Emoji', 'Segoe UI Symbol', Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 400 !important;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
