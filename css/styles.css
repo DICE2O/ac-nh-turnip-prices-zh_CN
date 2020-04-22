@@ -436,6 +436,10 @@ input[type=number] {
   max-height: 150px;
 }
 
+.waves-container {
+  height: 5vh;
+}
+
 #permalink-input {
   display: none;
   position: fixed;
@@ -525,5 +529,9 @@ input[type=number] {
   .waves {
     height: 40px;
     min-height: 40px;
+  }
+
+  .waves-container {
+    height: 40px;
   }
 }
