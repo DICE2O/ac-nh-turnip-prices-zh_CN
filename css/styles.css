@@ -454,9 +454,10 @@ input[type=number] {
 }
 
 .permalink .fa-copy {
-  margin: 0 8px;
-  height: 20px;
+  margin: 0 2px 2px 0;
+  height: 1.2rem;
   color: #0AB5CD;
+  vertical-align: middle;
 }
 
 /* The snackbar - position it at the bottom and in the middle of the screen */
