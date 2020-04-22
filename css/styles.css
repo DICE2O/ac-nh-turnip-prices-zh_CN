@@ -1,5 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Varela+Round&display=swap');
 
+/* - Nintendo Fonts - */
+
+@font-face {
+  font-family: ParkExt;
+  src: url(fonts/ParkExt.woff2) format("woff2"),url(fonts/ParkExt.woff) format("woff");
+  unicode-range: u+e200-e27f,u+e0a0-e153,u+2660-2667,u+1fa,u+2605-2606,u+266a
+}
+
+@font-face {
+  font-family: nintendoP_Seurat-B;
+  src: url(fonts/nintendoP_Seurat-B_003.woff2) format("woff2"),url(fonts/nintendoP_Seurat-B_003.woff) format("woff")
+}
+
+@font-face {
+  font-family: nintendoP_Seurat-B-sub;
+  src: url(fonts/nintendoP_Seurat-B_003.woff2) format("woff2"),url(fonts/nintendoP_Seurat-B_003.woff) format("woff");
+  unicode-range: u+0-30ff,u+ff??
+}
+
+@font-face {
+  font-family: nintendoP_Seurat-B-sub2;
+  src: url(fonts/nintendoP_Seurat-B_003.woff2) format("woff2"),url(fonts/nintendoP_Seurat-B_003.woff) format("woff");
+  unicode-range: u+0-3000,u+3003-30ff,u+ff00-ff0b,u+ff0d,u+ff0f-ffff
+}
+
+@font-face {
+  font-family: DFP_GB_Y9_0;
+  src: url(fonts/DFP_GB_Y9_0-adjusted.woff2) format("woff2"),url(fonts/DFP_GB_Y9_0-adjusted.woff) format("woff")
+}
+
+@font-face {
+  font-family: nintendo_udsg-r_org_zh-cn;
+  src: url(fonts/nintendo-ttf-ckt/nintendo_udsg-r_ext_zh-cn_003.woff2) format("woff2"),url(fonts/nintendo-ttf-ckt/nintendo_udsg-r_ext_zh-cn_003.woff) format("woff")
+}
+
+@font-face {
+  font-family: nintendo_udsg-r_ext_zh-cn;
+  src: url(fonts/nintendo-ttf-ckt/nintendo_udsg-r_org_zh-cn_003.woff2) format("woff2"),url(fonts/nintendo-ttf-ckt/nintendo_udsg-r_org_zh-cn_003.woff) format("woff")
+}
+
 /* - Global Styles - */
 
 html {
@@ -19,7 +59,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Varela Round', '-apple-system', BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei',  'Segoe UI Emoji', 'Segoe UI Symbol', Helvetica, Arial, sans-serif;
+  font-family: ParkExt, nintendoP_Seurat-B, DFP_GB_Y9_0, nintendo_udsg-r_org_zh-cn, nintendo_udsg-r_ext_zh-cn, '-apple-system', BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei',  'Segoe UI Emoji', 'Segoe UI Symbol', Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
