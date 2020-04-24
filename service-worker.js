@@ -4,6 +4,8 @@ const precacheFiles = [
 	"/index.html",
 	"/js/predictions.js",
 	"/js/scripts.js",
+	"/js/chart.js",
+	"/js/contributors.js",
 	"/css/styles.css",
 	"https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js",
 	"https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js",
