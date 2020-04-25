@@ -209,9 +209,8 @@ const getPricesFromQuery = function (param) {
 };
 
 const getPreviousFromQuery = function () {
-
   /* Check if valid prices are entered. Exit immediately if not. */
-  prices = getPricesFromQuery("prices");
+  const prices = getPricesFromQuery("prices");
   if (prices == null) {
     return null;
   }
